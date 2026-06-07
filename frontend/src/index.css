@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Force Tailwind v4 à utiliser la classe .dark au lieu du système */
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light dark;
+}
