@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, BarChart, Bar, XAxis, YAxis } from 'recharts';
 
-const API_URL = 'http://127.0.0.1:8080/prospects';
+const API_URL = 'https://mon-crm-backend.onrender.com/prospects';
 
 export default function App() {
   const [prospects, setProspects] = useState([]);
