@@ -13,7 +13,7 @@ app = FastAPI(title="Shadow CRM API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # En production, on mettra l'URL exacte du frontend
+    allow_origins=["https://mon-crm-frontend.vercel.app"], # En production, on mettra l'URL exacte du frontend
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
